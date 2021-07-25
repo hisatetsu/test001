@@ -11,37 +11,16 @@ body {
 }
 
 
-.grd{
-	display: flex;
-	justify-content:center;
-align-items:center;
-	height: 100%;
-	background-image: url("image01.jpg") ;
+.picsam{
+	float:left;
 }
 
+.container{
+	margin: 10px;
+	border:10px solid black;
 
-
-div.bod ol{
-	padding-left:10px;
-	padding-right:10px;
 }
 
-
-.cent {
-	border-color: red;
-	box-shadow: 0px 10px 10px rgb(17, 14, 9);
-	padding:10px;
-	border: 2px solid #595959;
-	background-image:url("image02.jpg") ;
-}
-
-div.cent ol{
-	padding-left:20px;
-	padding-right:10px;
-	list-style: none;
-}
-
-.center{
-	text-align: center;
-	background-color:rgba(255,255,255,.7);
+.cf{
+	clear:both;
 }
