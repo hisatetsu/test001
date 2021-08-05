@@ -10,17 +10,78 @@ body {
   margin: 0;
 }
 
-
-.picsam{
-	float:left;
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+
+.HolyGrail-content {
+  flex: 1;
+}
+
+.HolyGrail-nav, .HolyGrail-ads {
+  /* カラム幅は12em */
+  flex: 0 0 12em;
+}
+
+.HolyGrail-nav {
+  /* ナビゲーションを左に */
+  order: -1;
+}
+
+.HolyGrail,
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .HolyGrail-content {
+    flex: 1;
+  }
+  .HolyGrail-nav, .HolyGrail-ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
+
 
 .container{
-	margin: 10px;
-	border:10px solid black;
+  display:inline-flex;
+  align-items: flex-end;
+  margin: 10px;
+  border:10px solid black;
 
 }
 
-.cf{
-	clear:both;
+
+.picsam{
+  align-items: flex-start;
 }
+
+.ch6{
+	width:200px;
+	justify-content: left;
+	align-self: flex-end;
+}
+
+.cp{
+	align-items:  flex-end;
+	justify-content: left;
+}
+
+

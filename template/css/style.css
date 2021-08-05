@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import url("normalize.css");
+
+/**
+ * ***************************************
+ * ページ全体に関わるCSSの設定
+ * ***************************************
+ */
+html *,
+::before,
+::after {
+  box-sizing: border-box;
+}
+/* フォント */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+body {
+  font-family: sans-serif;
+}
+/* ベースのリンクカラー */
+a {
+  color: #f30;
+}
+
+/* レスポンシブイメージと画像下スペース防止 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;/* 画像下のスペースを消す */
+}
+/**  ページ全体に関わるCSSの設定終了  **/
+
+
+/* --------------------------------------
+ヘッダーコンテナ
+ -------------------------------------- */
+
+@media(min-width:768px){
+	.header-container{
+	margin:0 auto;
+	padding:0 20px;
+	max-width:1040px;
+	}
+
+
+}
+
+
+/**  ヘッダーコンテナに関わるCSSの設定終了  **/
+
+
+/* --------------------------------------
+パンくずコンテナ
+ -------------------------------------- */
+.breadcrumb{
+	display:none;
+}
+
+@media(min-width:768px){
+
+	.breadcrumb{
+	display:block;
+	}
+
+	.bc-container{
+	margin:0 auto;
+	padding:0 20px;
+	max-width:1040px;
+	}
+
+}
+
+
+/**  パンくずコンテナに関わるCSSの設定終了  **/
+
+
+
+
+/* --------------------------------------
+ページ下部
+ -------------------------------------- */
+.bottom-container{
+	padding:0 4% 0 4%;
+}
+
+/* ------------------
+メディア対応
+------------------*/
+@media (min-width: 768px) {
+	.bottom-container{
+		margin:0 auto;
+		padding:0 20px 0 20px;
+		max-width: 1040px;
+	}
+
+}
+
+/**  ページ下部に関わるCSSの設定終了  **/
+
+
+/* --------------------------------------
+フッター
+ -------------------------------------- */
+.footer-container{
+	padding:0 4%;
+}
+
+@media (min-width: 768px) {
+	.footer-container{
+		max-width: 1040px;
+		margin:0 auto;
+		padding:0 20px;
+
+	}
+
+
+}
+
+/**  フッターに関わるCSSの設定終了  **/
+
+
+/* --------------------------------------
+メインコンテナ
+ -------------------------------------- */
+
+.post .main-container{
+	padding:0 4% 0 4%;
+}
+
+/* ------------------
+メディア対応
+------------------*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+.post .main-container{
+	max-width:1040px;
+	padding:0 20px 0 20px;
+	margin: 0 auto;
+  }
+}
+
+
+

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 30px;
+  width: 22%;
+  background-color: #fff;
+}
+
+
+@media not all and (min-width: 768px) {
+  .item {
+    width: 100%;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
